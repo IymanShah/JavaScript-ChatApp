@@ -1,0 +1,126 @@
+.chatWindow{
+   background: #e6e6e6;
+}
+.DisplayName{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding: 40px;
+}
+#displayNameLabel{
+    padding-right: 10px;
+}
+
+.searchBox { 
+    width: 100%; 
+    display: block;
+    padding-left: 40px;
+} 
+ input{   
+    padding: 5px; 
+    border: solid 1px #cccccc;
+} 
+.searchTextBox{
+    display:inline-block;
+    width: 80%; 
+    padding: 5px; 
+    text-align: center; 
+    margin-right: 45px;
+}
+
+select{
+    display:inline-block;
+    padding: 4px;
+    width: 10%;
+    border: solid 1px #cccccc;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.searchBox i{
+    position: absolute; 
+}
+.icon { 
+    padding: 6px; 
+    min-width: 40px; 
+    color:#cccccc
+} 
+hr{
+    height:2px;
+    border-width:0;
+    color:#c2c2c2;
+    background-color: #c2c2c2;
+    margin:40px;
+}
+
+
+.writeMessage {
+    border: solid 1px #cccccc;
+    padding: 2px;
+    font-size: 0px;
+    display: inline-block;
+    background: white;
+    margin-bottom: 25px;
+    width:93%;
+    margin-left:40px;
+  }
+  
+  .writeMessage input,
+  button {
+    display: inline-block;
+    margin: 0px;
+    font-size: 12px;
+    background: white;
+    border-style: none;
+  }
+  .messageBox{
+      width: 93%;
+  }
+  .sendButton
+  {
+    border-style: solid;
+    border-color: lightgray;
+    width: 60px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  .sendButton:active{
+      border-color: lightgray;
+  }
+    .chat
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat li
+{
+    margin-bottom: 10px;
+    margin-right: 65px;
+    margin-left: 60px;
+    margin-top: 10px;
+    border-bottom: 1px dotted #B3A9A9;
+    width: auto;
+    background-color: white;  
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 30px;
+    display: block;
+}
+
+.messageBox:invalid + button {
+    opacity: 0.5;
+    pointer-events: none;
+}
+input:focus{
+    outline: none;
+}
+button:focus{
+    outline: none;
+}
+.chat div span,
+.chat div p{
+    display: inline;
+    margin: 0 1em 0 1em;
+}

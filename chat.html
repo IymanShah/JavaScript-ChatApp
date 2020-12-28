@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./chat.css">
+    <title>Awesome Chat App</title>
+    <script src="./chat.js"></script>
+
+</head>
+
+
+<body>
+        <div class="chatWindow">
+            <div class="DisplayName"> 
+                <b><label id="displayNameLabel" for="displayName">Display Name:  </label></b>
+                <input class="input-field"  id="displayName" 
+                       type="text" 
+                       placeholder="Please enter your name"> 
+            </div> 
+            <div class="searchBox">
+    
+                <i class="fa fa-search icon"> 
+                </i>  
+                <input type ="search" class="searchTextBox" placeholder="Search Messages">
+                <select>
+                  <option selected="selected">Filter</option>
+                  <option>1</option>
+                </select>
+            </div> 
+            <hr>
+            <div class="panel-body body-panel">
+                <ul class="chat">
+                   
+                    </ul>
+                </ul>
+            </div>
+            
+           <span class="writeMessage">
+                <input type ="text" class="messageBox" placeholder="Type a new message" onkeypress="return submit(event);" required>
+                <button class="sendButton" onclick="ProcessMessage()">Send</button>
+              </span>
+        </div>
+    </body>
+</html>
